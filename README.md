@@ -1,5 +1,7 @@
 # Google Auth Reverse Proxy
 
+[![Docker Repository on Quay](https://quay.io/repository/scaleft/google-auth-proxy/status "Docker Repository on Quay")](https://quay.io/repository/scaleft/google-auth-proxy)
+
 Based on [docker-apache2](https://github.com/pquerna/docker-apache2) and [mod_auth_openidc](https://github.com/pingidentity/mod_auth_openidc)
 
 ## Usage
