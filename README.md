@@ -49,9 +49,10 @@ Additionally add the respective `app.example.com.crt`, `app.example.com.ca.crt` 
 ```sh
 rkt run \
 --net=host \
--e OIDC_CLIENT_ID=VALUE_FROM_GOOLE
--e OIDC_CLIENT_SECRET=VALUE_FROM_GOOLE
--e OIDC_CRYPTO_SECRET=RANDOM_VALUE
+-e OIDC_CLIENT_ID=VALUE_FROM_GOOLGE \
+-e OIDC_CLIENT_SECRET=VALUE_FROM_GOOLGE \ 
+-e OIDC_CRYPTO_SECRET=RANDOM_VALUE \
+-e OIDC_REDIRECT_URI=YOUR_URL/_odic_redirect \
 --volume volume-conf,kind=host,source=/srv/google-auth,readOnly=true \
 docker://quay.io/scaleft/google-auth-proxy:latest
 ```
