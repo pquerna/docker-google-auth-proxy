@@ -33,3 +33,4 @@ RUN ./configure --with-apxs2=/opt/bin/apxs
 RUN make && make install
 RUN apk del ${DEV_PACKAGES}
 
+WORKDIR /opt
