@@ -1,4 +1,4 @@
-FROM quay.io/scaleft/apache2:latest
+FROM quay.io/steven_elleman/apache3:latest
 
 # <your-client-id-administered-through-the-google-api-console>
 ENV OIDC_CLIENT_ID REPLACE_ME
